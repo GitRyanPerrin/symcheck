@@ -1,0 +1,5 @@
+mcp>=1.2
+sympy>=1.13
+numpy>=2.0
+scipy
+pytest
