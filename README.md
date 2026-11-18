@@ -18,7 +18,7 @@ The idea: put the discipline in the tools and in an external audit, not only in 
 - MCP server wrapper: compiles, **not yet exercised against the `mcp` package or Hermes** (not installed on the Mac). First thing to do on the desktop.
 - Hermes config keys below are from the Hermes docs (`mcp_servers` in `~/.hermes/config.yaml`); check against your installed version.
 
-## Install (desktop, when the CSNW runs are done)
+## Install
 
 ```bash
 python3 -m venv ~/.venvs/symcheck
