@@ -1,7 +1,10 @@
 # symcheck
+(Written by GitRyanPerrin) This tool was written by Claude for running local agents to do Computer Algebra System verifications in physics research. The intention is to have the agent prioritize Sympy and check with a separate Numpy calculation, with no overlap in the codes for each. This should be readily adaptable for any analytically solvable math problems; though, it was intended for my research in Condensed Matter Physics. The exploration with Claude Opus 5.5 eventually came to this prompt (and later Symcheck):
 
-Tool-enforced "no mental math" for a local agent (Hermes Agent on top of Strata / Qwen3.8-Flash-Next).
-The idea: put the discipline in the tools and in an external audit, not only in the prompt.
+> "I am actually pretty interested in a couple things. 1) Since [Qwen3.8-Flash-Next] is a capable reasoning model,  giving it the guidance to do very little "mental math" and focusing on sympy and corroborating with numpy seem like pretty strong ways to operate with it [to verify my math]. What methods exist to ensure it doesn't lose the proper goal/focus, etc... [followed by unrelated prompting]"
+
+(Written by Claude Opus 5.5) Tool-enforced "no mental math" for a local agent (Hermes Agent on top of Strata / Qwen3.8-Flash-Next).
+The idea: put the discipline in the tools and in an external audit, not only in the prompt."
 
 | Piece | Where | Role |
 |---|---|---|
@@ -80,6 +83,5 @@ Then open a fresh Hermes session (or call Strata's API directly) with `templates
 
 ## Next: benchmark
 
-3–5 problems with answers you already know (e.g. planar Rashba alpha from a known k·p formula, a Kane-model limit,
-a value from a previous sp_fem run), each as a TASK.md. Run with and without the skill/tools and score with the audit
+3–5 problems with answers you already know, each as a TASK.md. Run with and without the skill/tools and score with the audit
 and verifier, so you measure whether the protocol helps.
